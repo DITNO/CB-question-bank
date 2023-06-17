@@ -3,11 +3,13 @@
 #include<algorithm>
 using namespace std;
 
+	int arr1[1000];
+	int arr2[1000];
+	int arr3[1000];
+
 int main() {
 	int n;
-	int arr1[n];
-	int arr2[n];
-	int arr3[1000];
+	cin>>n;
 	for(int i=0;i<n;i++){
 		cin>>arr1[i];
 	}
@@ -26,8 +28,10 @@ int main() {
 		}
 	}
 	sort(arr3,arr3+k);
-	for(int i=0;i<k;i++){
-		cout<<arr3[i]<<" ";
+	cout<<'[';
+	for(int i=0;i<=k-2;i++){
+		cout<<arr3[i]<<", ";
 	}
+	cout<<arr3[k-1]<<']';
 	return 0;
 }
