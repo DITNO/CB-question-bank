@@ -21,12 +21,12 @@ int main() {
 	
 	ls[0] = height[0];
 
-	for(int i=0;i<n;i++){
+	for(int i=1;i<n;i++){
 		ls[i] = max(ls[i-1],height[i]);
 	}
 
 	rs[n-1] = height[n-1];
-	for(int i=n;i>0;i--){
+	for(int i=n-2;i>=0;i--){
 		rs[i] = max(rs[i+1],height[i]);
 	}
 
@@ -35,7 +35,7 @@ int main() {
 		water += min(ls[i],rs[i]) - height[i];
 	}
 
-	cout<<water;
+	cout<<water<<endl;
 	}
 	return 0;
 }
