@@ -1,11 +1,10 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 
 int expo(int base,int n){
     //base case
-    if(n == 0){
-        return 1;
+    if(n == 1){
+        return base;
     }
     //rec case
     return base*expo(base,n-1);
