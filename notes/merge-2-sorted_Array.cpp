@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-mergesort(int arr1[],int n1,int arr2[]){
+void mergesort(int arr1[],int n1,int arr2[]){
     int i=0;int j=0;int k =0;
     int temp[1000] = 0;
     
